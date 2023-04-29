@@ -1,13 +1,88 @@
+
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+
+{% block title %}Recette Diététique{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="assets\style\base.css"/>
+
+{% endblock %}
+
 
 {% block body %}
+    
+            {% block header %}
+                <header>
+
+                    <div class="navbar">
+                        <div class="imgContainer">
+                        <img src="assets\image\burger.svg" alt="menu burger" />
+                        </div>
+                        <div class="tittleContainer">
+                        <h1>Recette Diététique <h1/>
+                        <h3>By sandrine coupart <h3/>
+                        </div>
+                
+                    </div>
+                           
+                    <header/>
+
+                    
+              
+            
+            
+            {% endblock %}
+
+
+                    <div class="catégorie-container">
+                        <div id ="categorie-default-menu" onclick='seeCategorieList()'>
+                            <li><a>Catégorie</a></li>
+                            <img src="assets\image\icon.svg">
+                        </div>
+                        <div class='categorie-menu'>
+                                <ul>
+                                    <div id="caterogieTittle">
+                                    <h4>Catégorie</h4>
+                                    <img src="assets\image\icon2.svg" alt="icon">
+                                    </div>
+
+                                <li><a href="#">Végétarien<a/></li>
+                                <li><a href="#">Sans lactose<a/></li>
+                                <li><a href="#">Sans sel<a/></li>
+                                </ul>
+                                </div> 
+                    </div>
+
+
+
+
+                <div class="infoCard">
+                    <div class="card1">
+                        <h3><a>Mes services</a></h3>
+                    </div>
+
+                    <div class="card2">
+                        <h3><a>A propos</a></h3>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
 <style>
+
+   
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper code { background:blue; padding: 2px 6px; }
 </style>
 
+{% block article%}
 <div class="example-wrapper">
     <h1>Hello {{ name }}! ✅</h1>
 
@@ -17,4 +92,6 @@
         <li>Your template at <code><a href="{{ 'C:/Users/Audrey/OneDrive/Personnel/ORDI PORTABLE/STUDI/SITE/CLICOUPART/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
     </ul>
 </div>
+{% endblock %}
+    
 {% endblock %}

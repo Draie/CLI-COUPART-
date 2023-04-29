@@ -75,14 +75,4 @@ Encore
 
 const Encore = require('@symfony/webpack-encore');
 
-Encore
-  // ...
-  .addEntry('app', './src/Resources/assets/js/app.js')
-  .addStyleEntry('styles', '.src/assets/styles/app.scss')
-  // ...
-;
-
-module.exports = Encore.getWebpackConfig();
-
-
 module.exports = Encore.getWebpackConfig();
