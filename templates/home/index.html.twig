@@ -5,7 +5,7 @@
 {% block title %}Recette Diététique{% endblock %}
 {% block stylesheets %}
     <link rel="stylesheet" href="assets\style\base.css"/>
-
+    <link rel="stylesheet" href="assets\style\navbar.css"/>
 {% endblock %}
 
 
@@ -35,21 +35,32 @@
 
 
                     <div class="catégorie-container">
-                        <div id ="categorie-default-menu" onclick='seeCategorieList()'>
-                            <li><a>Catégorie</a></li>
-                            <img src="assets\image\icon.svg">
-                        </div>
+                
                         <div class='categorie-menu'>
-                                <ul>
                                     <div id="caterogieTittle">
                                     <h4>Catégorie</h4>
-                                    <img src="assets\image\icon2.svg" alt="icon">
+                                    <img class="burger"src="assets\image\icon2.svg" alt="icon" >
                                     </div>
+                                      
+                                        
+                                        <div class"check-box">
+                                        <input type="checkbox" id="vegetarien" name="Vegétarien" checked>
+                                        <label for="vegetarien">Végetarien</label> 
+                                       
 
-                                <li><a href="#">Végétarien<a/></li>
-                                <li><a href="#">Sans lactose<a/></li>
-                                <li><a href="#">Sans sel<a/></li>
-                                </ul>
+                                         
+                                        <input type="checkbox" id="sans-glucose" name="sans-glucose" checked>
+                                        <label for="sansglucose">Sans glucose </label> 
+                                     
+
+                                         
+                                        <input type="checkbox" id="sans-sel" name="sans-sel" checked>
+                                        <label for="sans-sel">Sans sel</label> 
+                                        </div>
+                                        
+                                
+                        
+
                                 </div> 
                     </div>
 
@@ -58,16 +69,22 @@
 
                 <div class="infoCard">
                     <div class="card1">
-                        <h3><a>Mes services</a></h3>
+                        <h3><a href="#">Mes services</a></h3>
                     </div>
 
                     <div class="card2">
-                        <h3><a>A propos</a></h3>
+                        <h3><a href="#">A propos</a></h3>
                     </div>
 
                 </div>
 
+                {% block Recette %}
+                    <p>Recette</p>
+                        
 
+                    
+
+                {% endblock %}
 
 
 

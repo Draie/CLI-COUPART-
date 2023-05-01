@@ -1,0 +1,26 @@
+
+.imgContainer image{
+    max-width:41px;
+    max-height:33px;
+    
+}
+.imgContainer{
+    align-self: center;
+}
+
+    .navbar{
+        display:flex;
+        flex-direction:row;
+        background-color: #609A7D;
+        gap:3em;
+        justify-content:center;
+        text-align:center;
+        color:white;
+        font-family: 'Inter', sans-serif;
+        font-size:20px;
+        max-height: 84px;
+    }
+        .navbar h3{
+            font-family: 'Reenie Beanie', cursive;
+        
+        }
